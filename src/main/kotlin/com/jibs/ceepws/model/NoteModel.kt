@@ -1,8 +1,9 @@
 package com.jibs.ceepws.model
 
-class NoteModel(
+data class NoteModel(
     val title: String,
-    val description: String,
-){
-    constructor(): this("","")
-}
+    val description: String
+)
+//{
+//    constructor(): this("","")
+//}
