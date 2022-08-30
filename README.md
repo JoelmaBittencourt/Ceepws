@@ -26,3 +26,18 @@ Já que ele não tem nada configurado para responder a esse tipo de requisição
 A ideia do @RestController é fazer com que a resposta das funções do Controller que foram mapeadas, como é o caso da nossa list(), tenham o @ResponseBody por padrão, ou seja, não precisamos mais indicá-lo!
 
 https://medium.com/collabcode/criando-um-web-service-base-no-spring-boot-com-kotlin-962a51317d63
+
+spring.datasource.url: Trata-se do endereço do banco de dados que será utilizado, ou seja, jdbc:hsqldb:file:database/main/db
+É válido mencionar que essa configuração também indica que o banco de dados será armazenado em um arquivo (file) dentro do diretório database/main/db.
+
+spring.datasource.username: como próprio nome diz é o usuário do banco de dados, como podemos ver, está sendo o sa
+o valor sa é o usuário padrão do hsqldb.
+
+spring.datasource.driver-class-name: Driver que permite a comunicação entre a aplicação e o banco de dados HSQLDB por meio do JDBC, por isso adicionamos org.hsqldb.jdbc.JDBCDriver
+spring.jpa.properties.hibernate.dialect: SQL que o Hibernate vai gerar durante o processo de transação com o banco de dados. Nesse caso o valor org.hibernate.dialect.HSQLDialect indica que o SQL gerado dará suporte ao HSQLDB
+spring.jpa.hibernate.ddl-auto: Nessa configuração indicamos ao Hibernate que ele vai criar as tabelas automaticamente de acordo com as entidades do ORM, por isso do valor ser update
+Configuração por meio 
+
+@Entity: indica que a classe Note vai será considerada uma entidade controlada pelo Hibernate
+@Id: torna a property id como primary key da entidade
+@GeneratedValue: configura a primary key para que seja computada automaticamente de forma incremental.
