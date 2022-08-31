@@ -41,3 +41,5 @@ Configuração por meio
 @Entity: indica que a classe Note vai será considerada uma entidade controlada pelo Hibernate
 @Id: torna a property id como primary key da entidade
 @GeneratedValue: configura a primary key para que seja computada automaticamente de forma incremental.
+
+https://medium.com/collabcode/implementando-uma-crud-api-no-spring-boot-com-kotlin-parte-1-c6e281d0f8f8
